@@ -72,6 +72,7 @@ def main():
     @client.event
     async def on_message_edit(before, after):
         await common_handle_message(after)
+    print("Up and running!")
 
     # Finally, set the bot running
     client.run(settings.BOT_TOKEN)
